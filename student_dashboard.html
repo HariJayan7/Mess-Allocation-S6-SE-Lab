@@ -113,9 +113,9 @@
                                                     {{student[5]}}</label>
                                             </div>
                                         </div>
-                                        {% if student[5] %}
+                                        {% if student[5] or student[6]>0 %}
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                            <button type="submit" class="btn btn-primary btn-lg" disabled>Go To Mess
+                                            <button type="submit" class="btn btn-danger btn-lg" disabled>Go To Mess
                                                 Allocation</button>
                                         </div>
                                         {% else %}
